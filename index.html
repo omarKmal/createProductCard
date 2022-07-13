@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+  </head>
+  <body>
+    <!-- <div id="header">
+      <h1>Upload an excel file to convert into JSON</h1>
+      Input element to upload an excel file
+      <input type="file" id="file_upload" />
+      <button onclick="upload()">Upload</button>
+      <br /><br />
+      container to display the json result
+      <textarea
+        id="json-result"
+        style="display: none; height: 500px; width: 350px"
+      ></textarea>
+    </div> -->
+<div>
+      <label for="inputData">Product Name</label>
+    <input type="text" class="productName" >
+    <label for="price">Price</label>
+    <input type="number" class="price">
+    <button id="download">Download</button>
+</div>
+
+    <div id="capture"></div>
+    <div id="previewImage"></div>
+
+    <!-- <div id="capture" style="padding: 10px; background: #f5da55">
+      <h4 style="color: #000">Hello world!</h4>
+    </div> -->
+
+    <!-- <div class="image-container">
+      <div class="card">
+        <div class="card-header">
+          <div class="k-logo">
+            <img src="./arabic & english home kit logo (2).png" alt="" />
+          </div>
+          <div class="h-logo">
+            <img src="./alhowaiml.png" alt="" />
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="right box-image">
+            <img
+              src="https://media.zid.store/fb22a66d-b3da-4b58-9b6e-4ace079d24d0/1d1acf7f-41fd-4ddd-8bdc-773ab0a2ef50.jpg"
+              alt=""
+            />
+          </div>
+          <div class="left">
+            <h3 class="title"></h3>
+            <h3 class="price"></h3>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./htm2canvas.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
