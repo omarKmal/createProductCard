@@ -51,12 +51,12 @@ var getCanvas; // global variable
 var element = $("#imageDIV"); // global variable
 
 $("#download").on("click", function () {
-    $("#Image-1").hide();
+  $("#Image-1").hide();
 
-    let productName = $(".productName").val(),
-      price = $(".price").val();
-    $("#capture").append(
-      `
+  let productName = $(".productName").val(),
+    price = $(".price").val();
+  $("#capture").append(
+    `
       <div id="Image-1" class="image-container">
             <div class="card">
               <div class="card-header">
@@ -74,9 +74,12 @@ $("#download").on("click", function () {
             </div>
           </div>
         `
-    );
+  );
 
-  }); 
+  setTimeout(() => {
+    $(".image-container").hide();
+  }, 200);
+});
 
 $("document").ready(function () {
   html2canvas(document.querySelector("#capture")).then((canvas) => {
@@ -106,8 +109,6 @@ $("document").ready(function () {
 
   const btn = document.querySelector("#download");
   btn.addEventListener("click", capture);
-
- 
 
   // $.each(Products, function (i, item) {
   //   // console.log(i.);

@@ -2,6 +2,8 @@ body {
   max-width: 1080px;
   max-height: 600px;
   font-family: "cairo";
+  background-color: #555;
+  direction: rtl;
 }
 
 .card {
@@ -70,4 +72,60 @@ body {
 .box-image img {
   max-width: 60%;
   max-height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+} */
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+input {
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-image: initial;
+  border-bottom: 2px solid rgb(116, 140, 133);
+  width: 100%;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+  font-size: 20px;
+  outline: none;
+  transition: all 0.2s ease-in-out 0s;
+  margin-bottom: 2rem;
+}
+
+label {
+  color: #fff;
+  font-weight: 500;
+}
+
+button {
+  padding: 20px 30px;
+  font-family: inherit;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.847);
+  background-color: rgb(255, 193, 7);
+  cursor: pointer;
+  border: none;
+  /* letter-spacing: 2px; */
+  transition: all 0.5s ease-in-out 0s;
 }
