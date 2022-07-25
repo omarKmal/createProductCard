@@ -4,6 +4,7 @@ body {
   font-family: "cairo";
   background-color: #555;
   direction: rtl;
+  padding: 15px ; 
 }
 
 .card {
